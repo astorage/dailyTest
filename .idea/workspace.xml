@@ -6,7 +6,91 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5b7652-8af3-4723-8423-65fab7a555cf" name="Default" comment="" />
+    <list default="true" id="7c5b7652-8af3-4723-8423-65fab7a555cf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/contorller/BizExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/contorller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/contorller/TestHibernateValidationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/hbase/HBaseUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/hbase/QueryDataTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/hbase/test/HbaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/model/DataResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/model/ReturnConstant$ReturnMsgEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/model/ReturnConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/model/dto/StudentDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/mysql/MysqlTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/mysql/dos/TCookiePushDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/mysql/mapper/TCookiePushMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/mysql/mapper/TCookiePushMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/mysql/service/InsertDataTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/mysql/service/MysqlService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/mysql/service/MysqlServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/service/CountDownLatchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/service/Dkej.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/service/MyRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/service/MyRunnable1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/service/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/service/TestHiveJdbc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/service/TestImpalaJdbc41.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/util/DateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/util/GZIPUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/java/util/JacksonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hbase-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/contorller/BizExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/contorller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/contorller/TestHibernateValidationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/hbase/HBaseUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/hbase/QueryDataTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/hbase/test/HbaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/model/DataResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/model/ReturnConstant$ReturnMsgEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/model/ReturnConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/model/dto/StudentDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/mysql/MysqlTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/mysql/dos/TCookiePushDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/mysql/mapper/TCookiePushMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/mysql/mapper/TCookiePushMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/mysql/service/InsertDataTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/mysql/service/MysqlService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/mysql/service/MysqlServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/service/Dkej.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/service/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/service/TestHiveJdbc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/service/TestImpalaJdbc41.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/com/java/util/JacksonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/hbase-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/mybatis-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/commons-lang3-3.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-aop-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-beans-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-context-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-core-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-expression-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-jcl-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-web-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/spring-webmvc-5.0.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/lib/trilead-ssh2-1.0.0-build221.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test/index.jsp" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +125,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -70,7 +163,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -134,6 +227,9 @@
       <replace>e.printStackTrace();</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.xml" root0="SKIP_INSPECTION" />
@@ -190,6 +286,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/java/service/TestImpalaJdbc41.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/java/util/DateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -244,6 +341,7 @@
     <option name="width" value="1400" />
     <option name="height" value="948" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -257,168 +355,6 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="contorller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hbase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hbase" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="dos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="CountDownLatchTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -680,7 +616,7 @@
       <workItem from="1535937567938" duration="39401000" />
       <workItem from="1536721161017" duration="31815000" />
       <workItem from="1536916033996" duration="15867000" />
-      <workItem from="1537431506386" duration="6522000" />
+      <workItem from="1537431506386" duration="7721000" />
     </task>
     <servers />
   </component>
@@ -717,7 +653,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192810000" />
+    <option name="totallyTimeSpent" value="194009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -742,11 +678,11 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.41022852" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.41067538" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3297062" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="SciView" order="6" />
@@ -893,13 +829,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/maven-repository/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE-sources.jar!/org/springframework/context/support/ReloadableResourceBundleMessageSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="241" column="54" selection-start-line="241" selection-start-column="41" selection-end-line="241" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/maven-repository/org/springframework/spring-web/5.0.8.RELEASE/spring-web-5.0.8.RELEASE.jar!/org/springframework/web/bind/MethodArgumentNotValidException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1250,7 +1179,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -1268,8 +1197,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
