@@ -23,8 +23,8 @@ import javax.validation.constraints.NotNull;
 @Validated
 @RestController
 public class TestHibernateValidationController {
-    @Autowired
-    private MysqlService mysqlService;
+//    @Autowired
+//    private MysqlService mysqlService;
 
     @RequestMapping("/hibernateValidate/test")
     public String test(){

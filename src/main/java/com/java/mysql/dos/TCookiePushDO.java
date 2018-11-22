@@ -22,4 +22,8 @@ public class TCookiePushDO {
      * 日期
      */
     private String dataDate;
+    /**
+     * 序号
+     */
+    private Integer sequNum;
 }

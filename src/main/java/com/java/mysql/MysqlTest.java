@@ -35,7 +35,7 @@ public class MysqlTest {
         Map<String, Object> param = new HashMap<>();
         param.put("offset", 0);
         param.put("pageSize", 500);
-        param.put("categoryId", 858653);
+        param.put("categoryId", 415590);
         List<TCookiePushDO> tCookiePushDOList = mysqlService.pageQueryByCategoryId(param);
         long end = System.currentTimeMillis();
         System.out.println(""+ (end - start) + "毫秒");
@@ -49,33 +49,41 @@ public class MysqlTest {
         context = new ClassPathXmlApplicationContext("classpath:application.xml");
         mysqlService =  (MysqlService)context.getBean("mysqlServiceImpl");
         threadPoolTaskExecutor = (ThreadPoolTaskExecutor)context.getBean("threadPoolTaskExecutor");
+
     }
 
     @Test
     public void insertBatchDataTest() {
-        CountDownLatch latch = new CountDownLatch(3000);
-        String todayStr = dateTOString(new Date());
+        CountDownLatch latch = new CountDownLatch(300000);
+        // String todayStr = dateTOString(new Date());
         for (int m = 0; m < 30; m ++){
             long categoryId = Math.round(1000000*Math.random());
             for (int j = 0; j < 100; j ++){
-                List<TCookiePushDO> dataList = new ArrayList<>();
-                long size = Math.round(5000*Math.random());
-                for (int i = 0; i < 10000; i ++){
-                    TCookiePushDO tCookiePushDO = new TCookiePushDO();
-                    tCookiePushDO.setCategoryId(Integer.valueOf(String.valueOf(categoryId)));
-                    String cookieId = UUID.randomUUID().toString();
-                    dataList.add(tCookiePushDO);
+                //long size = Math.round(5000*Math.random());
+                for (int k = 0; k<100; k++) {
+                    List<TCookiePushDO> dataList = new ArrayList<>();
+                    for (int i = 0; i < 100; i ++){
+                        TCookiePushDO tCookiePushDO = new TCookiePushDO();
+                        tCookiePushDO.setCategoryId(Integer.valueOf(String.valueOf(categoryId)));
+                        tCookiePushDO.setDataDate("20181024");
+                        String cookieId = UUID.randomUUID().toString();
+                        tCookiePushDO.setUser(cookieId);
+                        tCookiePushDO.setSequNum((j*10000 +k*100 + i + 1));
+                        dataList.add(tCookiePushDO);
+                    }
+                    InsertDataTask insertDataTask = context.getBean("insertDataTask", InsertDataTask.class);
+                    insertDataTask.setDataList(dataList);
+                    insertDataTask.setLatch(latch);
+                    threadPoolTaskExecutor.submit(insertDataTask);
                 }
-                InsertDataTask insertDataTask = context.getBean("insertDataTask", InsertDataTask.class);
-                insertDataTask.setDataList(dataList);
-                insertDataTask.setLatch(latch);
-                threadPoolTaskExecutor.submit(insertDataTask);
+
             }
         }
 
         try {
             latch.await();
             System.out.println("Main finished");
+            threadPoolTaskExecutor.shutdown();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -117,6 +125,26 @@ public class MysqlTest {
             System.out.println("Main finished");
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+
+
+    @Test
+    public void insertBatchDataTest1() {
+        long categoryId = Math.round(1000000*Math.random());
+
+        for (int k = 0; k<100; k++) {
+            List<TCookiePushDO> dataList = new ArrayList<>();
+            for (int i = 0; i < 100; i ++){
+                TCookiePushDO tCookiePushDO = new TCookiePushDO();
+                tCookiePushDO.setCategoryId(Integer.valueOf(String.valueOf(categoryId)));
+                tCookiePushDO.setDataDate("20181022");
+                String cookieId = UUID.randomUUID().toString();
+                tCookiePushDO.setUser(cookieId);
+                tCookiePushDO.setSequNum((k*100 + i + 1));
+                dataList.add(tCookiePushDO);
+            }
+            mysqlService.insertData(dataList);
         }
     }
 }

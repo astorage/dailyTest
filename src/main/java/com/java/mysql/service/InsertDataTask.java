@@ -29,8 +29,16 @@ public class InsertDataTask implements Runnable {
 
     @Override
     public void run() {
-        mysqlService.insertData(dataList);
-        latch.countDown();
-        System.err.println("========" + latch.toString());
+        try {
+            mysqlService.insertData(dataList);
+            latch.countDown();
+            dataList = null;
+            //Runtime.getRuntime().gc();
+            System.gc();
+            System.err.println(Thread.currentThread().getName() +"========" + latch.toString());
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

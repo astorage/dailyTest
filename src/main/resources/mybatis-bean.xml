@@ -12,22 +12,23 @@
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
     </bean>
 
-    <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+    <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
         <property name="url" value="${jdbc_url}" />
         <property name="username" value="${jdbc_username}" />
         <property name="password" value="${jdbc_password}" />
-        <property name="initialSize" value="10"/>
-        <property name="maxActive" value="20"/>
+        <property name="initialSize" value="50"/>
+        <property name="maxActive" value="150"/>
         <property name="maxWait" value="5000"/>
         <property name="poolPreparedStatements" value="true"/>
         <property name="maxPoolPreparedStatementPerConnectionSize" value="5"/>
-        <property name="timeBetweenEvictionRunsMillis" value="30000" />
-        <property name="minEvictableIdleTimeMillis" value="100000" />
+        <property name="timeBetweenEvictionRunsMillis" value="2000" />
+        <property name="minEvictableIdleTimeMillis" value="600000" />
         <property name="testWhileIdle" value="true" />
         <property name="testOnBorrow" value="true" />
         <property name="testOnReturn" value="false" />
-
+        <property name="keepAlive" value="true"/>
+        <property name="validationQuery" value="SELECT 'x'"/>
 
        <!-- &lt;!&ndash; 初始化连接大小 &ndash;&gt;
         <property name="initialSize" value="0" />
@@ -50,16 +51,16 @@
         &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;
         <property name="timeBetweenEvictionRunsMillis" value="60000" />
         &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;
-        <property name="minEvictableIdleTimeMillis" value="25200000" />
-        &lt;!&ndash; 打开removeAbandoned功能 &ndash;&gt;
+        <property name="minEvictableIdleTimeMillis" value="25200000" />-->
+        <!-- 打开removeAbandoned功能 -->
         <property name="removeAbandoned" value="true" />
-        &lt;!&ndash; 1800秒，也就是30分钟 &ndash;&gt;
+        <!-- 1800秒，也就是30分钟 -->
         <property name="removeAbandonedTimeout" value="1800" />
-        &lt;!&ndash; 关闭abanded连接时输出错误日志 &ndash;&gt;
-        <property name="logAbandoned" value="true" />
-        &lt;!&ndash; 监控数据库 &ndash;&gt;
-        &lt;!&ndash; <property name="filters" value="stat" /> &ndash;&gt;
-        <property name="filters" value="mergeStat" />-->
+        <!--  &lt;!&ndash; 关闭abanded连接时输出错误日志 &ndash;&gt;
+         <property name="logAbandoned" value="true" />
+         &lt;!&ndash; 监控数据库 &ndash;&gt;
+         &lt;!&ndash; <property name="filters" value="stat" /> &ndash;&gt;
+         <property name="filters" value="mergeStat" />-->
     </bean>
 
     <!-- 配置sqlSessionFactory -->

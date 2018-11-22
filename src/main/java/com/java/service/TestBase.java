@@ -9,12 +9,17 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.*;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.chrono.IsoChronology;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.format.ResolverStyle;
 import java.time.format.SignStyle;
+import java.time.temporal.Temporal;
+import java.time.temporal.TemporalAmount;
+import java.time.temporal.TemporalUnit;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -135,8 +140,36 @@ public class TestBase {
         list1.add(1, "z");
         System.out.println(list1);
 
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+        System.out.println(sdf.parse("20181027"));
+
+        System.out.println("sfdfd".equals(null));
+
+        LocalDate date1 = LocalDate.now();
+        LocalDate date2 = LocalDate.now();
+        LocalDateTime time1 = LocalDateTime.now();
+        System.out.println(time1);
+
+        long ll;
+        //System.out.println(ll==0);
+
+        LocalDate dd1d = LocalDate.now();
+
+        System.out.println(dd1d);
+        System.out.println(LocalDate.of(2018, 11, 9));
+        System.out.println( dd1d.equals(LocalDate.of(2018, 11, 9)));
+
+
+        String str = "GET /codalg?featureValueList=H4sIAAAAAAAAAOVXW44cNwy8ig9gLCS%2BeYCcIsj9r5EqUuMEcD6Sz8DrxmyvpiWSxapi%2B%2Fc8379dXPL9W36uM1f%2BtHLnOl9eip%2F9499cX%2F3zx%2F9k399L7P3BIlbjc%2B138dPKD7AM%2F%2FxXAQtcsc%2B1D9pPKz%2BQyWvSvwoy%2FR%2BQsfn5VZDRDCrqmh7W7OL8pUWLETnYKNf46HHaVN%2BmnMSzKEWx4lHXTMTmzl1deVfqaT53Ny0npGRbz7dhUgK%2BSshNqnuiny786hIe7jWfhhTSL%2B7DHBlUC1eK9xMZYTZyRG88nr13OPxMU6UiYwL7tSlRLk%2BwUJzmMfcd2IXd%2BGA6GixST%2BIEU%2BVK7rnXql%2FUuK22USu0N6rZFKlHIjZqqBTWgBOLyi6WfomuND61AII6cR6YrwQZCdzYmv4Ela0BpWZsqHAr%2BxR9Zk3toire5TlJ4J1fmOh0rAbt6Tgbzdp4gjKlvx5EEInMvVPRXWs%2FteHaTnX985qg2DMKOmEtZBdoMY2%2FB1UoGWSu01%2BTEyiyFIXjAaZM0nVpMsGyrrqbj9fLTGcQsOal60Iekw7OAUe304CZMS1MyTVPscspgZlwlF2P1GBsZ0qFOlh%2BgH42LVFHZDeURcMIMZ7CTDJ0c8KK1DbivI5AUPYy6dzOoVtDTW%2BkSdIr0EaXpb1ILnG9TERbfCSJPJE3KqeUSDFKFExJnnxxStVrTGynr%2BW9H0b4pll2R7nIRD1s1gLYEE65gJByFrSWEB070yfIhNyoM1yMOb6QNHajikKS7UYWJipeBUBaT%2Fs45a7uyrIfLveuAnVJkqrFhgNDDmZBKASMm2yVQxmcY0JUwnsMwpmRnCSRuMu4K5cB925S0xTNqbED%2FbqPmr69wFpGftYOe1ERTr2KWoKDuEHONitAui4pgIp4kp7SUQuaXeN%2F1umLIyKMVOkv8YgaYWtOCirJM6K7mSC12jtpy4UwtA57BtlAQWflP8%2BD6jmshNOG0SmJFyu56cEc4VlNcyyJGs3RB7kA2D3jvBZNPdOieiYJcq%2Bc8NXZtukBnMtYHj7xae1UAZzDqR29l2W6g7qrT6OErtNH7bSxjwo10hWt%2FJB4BpOUR1nzWhVZxOMpIuhDqVJWOzjwrnZwKJ2zE6jMNHLmCMU0VSuJKm1C0Ju1190LjsVGwWVidh2kwvWry40LUdhLBBa%2FXYo%2B%2BvHyJZNGeQ3V8uY9dJEo9gGCU7YB9dwxVhAiKBmf%2BLAY%2BikA4LMYX747Y3c%2ByurZ8UCYlzxN%2BS5PIbD%2BLJ1nv5uMfNmBV6T8xgy%2BDhlRnz8C%2FzuQ4B%2FtSIPducopMXYvHWOzILqlc6aeGv%2BvRotm1uLgx1Vo6gmaPNTH5Hy0wUbZZqHrC2DQAVg%2B1g5cYdJAC8BJo%2F0RX8IC0JzqxxQP5gVtDpooCy8WTQLBsGal%2Bh7WYAoJ9HloxRv%2B6ueNXHTh6Qvzb13vHlS7aekgD0pV1bgOTx0XwnvLCBl592g%2BatxWAfoZnUFYvmMEr0gcbwcQzisR%2FOK8iczH35TG%2FIo3CfIJzJ9hA%2BGIlTyHK1t5KpNfgszDZyCNlrBpcOYZfcj5NkHNzDOggdN8HYqjbGEDOnIawOmHTtafdwb74IJpuG5TGo%2FS2G47P3HwvNEhvzFiga2R5YHOsd0OjZCgaBSTzdvMQBRuzvHR3sxwdp%2B3%2Bw0He7wB9fy9RMDsl1XNx%2B5n7cNxA%2B3%2B%2BBP%2BCKeNGw8AAA%3D%3D HTTP/1.1[\\r][\\n]";
+        String str2 = "{\"result\": 1, \"probability\": 0.6703, \"status\": 200}";
+        System.out.println( str.getBytes().length + " : " + str2.getBytes().length);
+
+
 
     }
+
+
+
     public static boolean isWrapClass(Class clz) {
         try {
             //clz.isPrimitive()

@@ -6,6 +6,7 @@
         <result column="category_id" property="categoryId" javaType="java.lang.Integer"/>
         <result column="user" property="user" javaType="java.lang.String"/>
         <result column="data_date" property="dataDate" javaType="java.lang.String"/>
+        <result column="sequ_num" property="sequNum" javaType="java.lang.Integer"/>
     </resultMap>
 
     <select id="pageQueryByCategoryId" resultMap="TCookiePushDOResultMap">
@@ -19,7 +20,7 @@
         </foreach>-->
 
         <foreach collection="dataList" item="data" separator="," >
-            ( #{data.categoryId},  #{data.cookieId}, #{data.dataDate})
+            ( #{data.categoryId},  #{data.user}, #{data.dataDate}, #{data.sequNum})
         </foreach>
     </insert>
 </mapper>
