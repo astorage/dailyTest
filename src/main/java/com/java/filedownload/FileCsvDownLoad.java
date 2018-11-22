@@ -18,7 +18,6 @@ import java.util.List;
 /**
  * Author: Boris
  * Date: 2018/11/21 13:38
- * Copyright (C), 2017-2018, 浙江执御信息技术有限公司
  * Description:
  */
 public class FileCsvDownLoad {

@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Author: Boris
  * Date: 2018/11/21 15:34
- * Copyright (C), 2017-2018, 浙江执御信息技术有限公司
  * Description:
  */
 @RestController
