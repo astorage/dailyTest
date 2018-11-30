@@ -210,6 +210,20 @@
     </dependency>
 
 
+    <!-- https://mvnrepository.com/artifact/com.googlecode.aviator/aviator -->
+    <dependency>
+      <groupId>com.googlecode.aviator</groupId>
+      <artifactId>aviator</artifactId>
+      <version>3.3.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.eweb4j/fel -->
+    <dependency>
+      <groupId>org.eweb4j</groupId>
+      <artifactId>fel</artifactId>
+      <version>0.8</version>
+    </dependency>
+
 
 
 
