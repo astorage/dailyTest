@@ -164,7 +164,53 @@ public class TestBase {
         String str2 = "{\"result\": 1, \"probability\": 0.6703, \"status\": 200}";
         System.out.println( str.getBytes().length + " : " + str2.getBytes().length);
 
+        //0未同步 1 部分同步2 全部同步3 全部失败
+        System.out.println(0&1);
+        System.out.println(0|1);
+        System.out.println(1|1);
+        System.out.println(1&2);
+        System.out.println(1|2);
+        System.out.println(0&3);
+        System.out.println(~0);
+        System.out.println(~1);
+        System.out.println(~2);
+        System.out.println(~3);
+        System.out.println("dfdf");
 
+        for (int i =1 ; i < 2; i++ ) {
+            System.out.println(i);
+        }
+
+        System.out.println((int)4444l);
+        System.out.println("3.0".contains(".") ? Double.valueOf("3") : Long.valueOf("3"));
+
+        String star = "3";
+        if (star.contains(".")) {
+            System.out.println(Double.valueOf(star));
+        }else {
+            System.out.println(Long.valueOf(star));
+        }
+
+        String ss = "yyyy-MM-dd hh:mm:ss";
+        System.out.println(ss.length());
+
+        String sdfd = "155BB442-41F2-41B5-BE3F-D5B4A6F1D95F6D39E045-68CD-467E-875D-A167EADF35D7";
+        System.out.println(sdfd.getBytes().length);
+        System.out.println(sdfd.length());
+
+        Boolean b1 = true;
+        Object obj = b1;
+        Boolean b2 = true;
+        if (b2.equals(obj)) {
+            System.out.println("sdfdsfdsf");
+        }
+
+        Set<String> set1 = new HashSet<>();
+        set1.add("3");
+        set1.remove("3");
+        System.out.println(set1.isEmpty());
+
+        System.out.println(Integer.valueOf("43 34"));
 
     }
 

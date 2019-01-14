@@ -121,7 +121,7 @@ public class AviatorTest {
     @Test
     public void test7() {
         //缓存编译结果，使用的时候会自动返回已经编译的结果
-        //AviatorEvaluator.compile("", true);
+        AviatorEvaluator.compile("", true);
         //缓存编译结果，取消缓存
         //AviatorEvaluator.invalidateCache("");
         //注册函数
