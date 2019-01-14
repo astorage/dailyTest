@@ -6,7 +6,6 @@ import com.googlecode.aviator.Expression;
 /**
  * Author: Boris
  * Date: 2018/12/25 16:09
- * Copyright (C), 2017-2018, 浙江执御信息技术有限公司
  * Description:
  */
 public class AwiatorUtil {

@@ -8,7 +8,6 @@ import java.util.*;
 /**
  * Author: Boris
  * Date: 2019/1/9 13:53
- * Copyright (C), 2017-2018, 浙江执御信息技术有限公司
  * Description:
  */
 public class BaseTesst1 {

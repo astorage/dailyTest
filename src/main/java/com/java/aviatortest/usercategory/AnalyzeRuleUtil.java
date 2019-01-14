@@ -12,7 +12,6 @@ import java.util.Map;
 /**
  * Author: Boris
  * Date: 2018/12/24 18:02
- * Copyright (C), 2017-2018, 浙江执御信息技术有限公司
  * Description:
  */
 public class AnalyzeRuleUtil {
